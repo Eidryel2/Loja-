@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- React -->
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.production.min.js"
+    ></script>
+
+    <title>AKIIOSHO YO</title>
+  </head>
+  <body id="topo">
+    <!-- Menu Feito -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand text-warning" href="#">AKIIOSHO YO</a>
+        <button
+          class="navbar-toggler navbar-warning"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-warning" href="#topo">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#produtos"
+                >Nossos Produtos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#somos">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#time">Nosso Time</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Inicio -->
+    <header>
+      <div class="text text-warning">シン・ソン・シン</div>
+      <div class="titulo text-white">AKIIOSHO YO</div>
+      <a class="btn btn-warning btn-xl text-uppercase" href="#produtos">Menu</a>
+    </header>
+
+    <!-- Caro -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Imagem 1 -->
+        <div
+          class="carousel-item active"
+          style="background-image: url('images/ja3.jpg')"
+          alt="Foto Comida japonesa"
+        >
+          <div class="carousel-caption">
+            <h5 class="text text-warning">A melhor</h5>
+            <p>Experimente o melhor do melhor.</p>
+          </div>
+        </div>
+        <!-- Imagem 2 -->
+        <div
+          class="carousel-item"
+          style="background-image: url('images/ja4.jpg')"
+        >
+          <div class="carousel-caption">
+            <h5 class="text text-warning">Comida Japonesa</h5>
+            <p>Melhor do Japão na sua casa.</p>
+          </div>
+        </div>
+        <!-- Imagem 3 -->
+        <div
+          class="carousel-item"
+          style="background-image: url('images/ja23.jpg')"
+        >
+          <div class="carousel-caption">
+            <h5 class="text text-warning">É só aqui</h5>
+            <p>Melhor Restaurante.</p>
+          </div>
+        </div>
+        <!-- Imagem 4 -->
+        <div
+          class="carousel-item"
+          style="background-image: url('images/ja25.jpg')"
+        >
+          <div class="carousel-caption">
+            <h5 class="text text-warning">AKIIOSHO YO</h5>
+            <p>シン・ソン・シン</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Produtos -->
+    <section id="produtos" class="py-5 bg-light">
+      <div class="container px-4 px-lg-5 mt-5">
+        <h2 class="fw-bolder mb-4">Nossos Produtos</h2>
+        <div
+          class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+        >
+          <!-- Produto 1 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img class="card-img-top" src="./images/ja1.jpg" alt="..." />
+
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Combo 1</h5>
+                  R$80.00
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 2 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <!-- Produto 2 -->
+              <div
+                class="badge bg-dark text-white position-absolute"
+                style="top: 0.5rem; right: 0.5rem"
+              >
+                Mais Vendido
+              </div>
+
+              <img class="card-img-top" src="./images/japo1.jpg" alt="..." />
+
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Combo 2</h5>
+                  R$18.00
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Produto 3 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <div
+                class="badge bg-dark text-white position-absolute"
+                style="top: 0.5rem; right: 0.5rem"
+              >
+                Segundo Mais Vendido
+              </div>
+
+              <img class="card-img-top" src="./images/japa3.jpg" alt="..." />
+
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Combo 3</h5>
+
+                  R$25.00
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Produto 4 -->
+          <div class="col mb-5">
+            <div class="card h-100">
+              <img class="card-img-top" src="./images/japa2.jpg" alt="..." />
+
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <h5 class="fw-bolder">Combo 5</h5>
+                  R$40.00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quem Somos -->
+    <section id="somos" class="py-5 bg-dark text-light">
+      <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+          <div class="col-md-6">
+            <img
+              class="card-img-top mb-5 mb-md-0"
+              src="./images/ja8.jpg"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-6">
+            <h1 class="text display-5 fw-bolder text-warning">Quem Somos</h1>
+
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium at dolorem quidem modi. Nam sequi consequatur
+              obcaecati excepturi alias magni, accusamus eius blanditiis
+              delectus ipsam minima ea iste laborum vero?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Time -->
+    <section id="time" class="page-section bg-light pt-5" id="team">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            Nossa Maravilhosa Equipe
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle text-warning"
+                src="./images/ja2.jpg"
+                alt="..."
+              />
+              <h4>Jay Park</h4>
+              <p class="text-muted">Chef</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle text-warning"
+                src="./images/ja2.jpg"
+                alt="..."
+              />
+              <h4>Jisoo Kim</h4>
+              <p class="text-muted">Sub Chef/p></p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle text-warning"
+                src="./images/ja2.jpg"
+                alt="..."
+              />
+              <h4>Nayeon Yoo</h4>
+              <p class="text-muted">Gerente</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+              eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam
+              corporis ea, alias ut unde.
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Rodape -->
+    <footer id="footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+      <div class="container text-center">
+        <small>Copyright &copy;</small>
+        <h2 class="fw-bolder mb-4">AKIIOSHO YO</h2>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
